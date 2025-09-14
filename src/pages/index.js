@@ -1,11 +1,19 @@
 import * as React from "react";
 import Layout from "../components/organisms/layout";
 import BasePage from "../components/organisms/basepage/basepage";
+import ImageSwitcher from "../components/organisms/imageSwitcher/imageSwitcher";
+
+const images = [
+  "/static/images/dog.jpg",
+  "/static/images/cat.jpg",
+  "/static/images/city.jpg",
+];
 
 const IndexPage = () => {
   return (
     <Layout>
       <BasePage />
+      <ImageSwitcher images={images} interval={3000} />
     </Layout>
   );
 };
