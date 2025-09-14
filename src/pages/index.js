@@ -4,9 +4,9 @@ import BasePage from "../components/organisms/basepage/basepage";
 import ImageSwitcher from "../components/organisms/imageSwitcher/imageSwitcher";
 
 const images = [
-  "/static/images/dog.jpg",
-  "/static/images/cat.jpg",
-  "/static/images/city.jpg",
+  "/static/images/forest.jpg",
+  "/static/images/mountain.jpg",
+  "/static/images/ocean.jpg",
 ];
 
 const IndexPage = () => {
