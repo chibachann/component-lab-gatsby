@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <BasePage />
-      <ImageSwitcher images={images} interval={3000} />
+      <ImageSwitcher images={images} interval={3000} height="500px" />
     </Layout>
   );
 };
