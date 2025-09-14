@@ -1,8 +1,8 @@
 {
-  "name": "web_base_gatsby",
+  "name": "component-lab-gatsby",
   "version": "1.0.0",
   "private": true,
-  "description": "web_base_gatsby",
+  "description": "たくさんのコンポーネントを作るGatsbyプロジェクト",
   "author": "chiba",
   "keywords": [
     "gatsby"
