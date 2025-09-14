@@ -1,0 +1,5 @@
+.basePage {
+    /* ベースページ用のスタイルをここに記述 */
+    background: #ccc;
+    min-height: 100vh;
+}
