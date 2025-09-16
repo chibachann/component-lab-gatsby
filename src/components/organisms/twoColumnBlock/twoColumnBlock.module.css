@@ -1,0 +1,15 @@
+.twoColumnBlock {
+  display: flex;
+  width: 100%;
+  gap: 0;
+}
+
+.leftColumn {
+  width: 60%;
+  opacity: 0.9;
+}
+
+.rightColumn {
+  width: 40%;
+  opacity: 0.8;
+}
