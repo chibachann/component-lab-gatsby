@@ -42,24 +42,65 @@ const IndexPage = () => {
         <p>デフォルト高さ（400px）</p>
       </ColorBlock>
       <ColorBlock backgroundColor="#6c5ce7" height="350px">
-        <TwoColumnBlock
-          leftBackgroundColor="#ff6b6b"
-          rightBackgroundColor="#4ecdc4"
-          height="300px"
-          leftContent={
-            <div>
-              <h3 style={{ color: 'white' }}>左側（60%）</h3>
-              <p style={{ color: 'white' }}>赤いブロック</p>
-            </div>
-          }
-          rightContent={
-            <div>
-              <h4 style={{ color: 'white' }}>右側（40%）</h4>
-              <p style={{ color: 'white' }}>ターコイズブロック</p>
-            </div>
-          }
-        />
+        
       </ColorBlock>
+      
+      {/* 横幅とグリッド機能のテスト */}
+      <ColorBlock 
+        backgroundColor="#fd79a8" 
+        height="300px"
+        width="80%"
+      >
+        <h3 style={{ color: 'white' }}>幅80%のブロック</h3>
+        <p style={{ color: 'white' }}>横幅を調整できます</p>
+      </ColorBlock>
+      
+      <ColorBlock 
+        backgroundColor="#fdcb6e" 
+        height="400px"
+        useGrid={true}
+        gridTemplateColumns="1fr 1fr 1fr"
+        gridTemplateRows="1fr 1fr"
+        gridGap="15px"
+      >
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.8)', padding: '20px', borderRadius: '8px' }}>
+          <h4>Grid Item 1</h4>
+        </div>
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.8)', padding: '20px', borderRadius: '8px' }}>
+          <h4>Grid Item 2</h4>
+        </div>
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.8)', padding: '20px', borderRadius: '8px' }}>
+          <h4>Grid Item 3</h4>
+        </div>
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.8)', padding: '20px', borderRadius: '8px' }}>
+          <h4>Grid Item 4</h4>
+        </div>
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.8)', padding: '20px', borderRadius: '8px' }}>
+          <h4>Grid Item 5</h4>
+        </div>
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.8)', padding: '20px', borderRadius: '8px' }}>
+          <h4>Grid Item 6</h4>
+        </div>
+      </ColorBlock>
+      
+      <ColorBlock 
+        backgroundColor="#a29bfe" 
+        height="250px"
+        width="60%"
+        useGrid={true}
+        gridTemplateColumns="2fr 1fr"
+        gridGap="25px"
+      >
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.9)', padding: '25px', borderRadius: '10px' }}>
+          <h3>メインコンテンツ（2fr）</h3>
+          <p>この領域は隣の領域の2倍の幅を持ちます</p>
+        </div>
+        <div style={{ backgroundColor: 'rgba(255,255,255,0.9)', padding: '25px', borderRadius: '10px' }}>
+          <h4>サイド（1fr）</h4>
+          <p>サイドバー領域</p>
+        </div>
+      </ColorBlock>
+      
     </Layout>
   );
 };
