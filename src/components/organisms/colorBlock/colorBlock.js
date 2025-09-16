@@ -4,6 +4,7 @@ import * as styles from "./colorBlock.module.css";
 // 色を表示するorganisms（BasePageを参考に作成）
 const ColorBlock = ({ 
   backgroundColor = "#f0f0f0", 
+  backgroundImage,
   height = "400px",
   width = "100%",
   useGrid = false,
@@ -12,11 +13,20 @@ const ColorBlock = ({
   gridGap = "20px",
   children 
 }) => {
+  const backgroundStyle = backgroundImage 
+    ? {
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }
+    : { backgroundColor };
+
   return (
     <div 
       className={styles.colorBlock}
       style={{ 
-        backgroundColor,
+        ...backgroundStyle,
         height,
         width
       }}

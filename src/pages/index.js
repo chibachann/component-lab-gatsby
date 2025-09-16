@@ -106,8 +106,8 @@ const IndexPage = () => {
         backgroundColor="#00b894" 
         height="600px"
         useGrid={true}
-        gridTemplateColumns="6fr 4fr"
-        gridGap="20px"
+        gridTemplateColumns="11fr 9fr"
+        gridGap="0px"
       >
         {/* 左側：縦に1:3:6で分割 */}
         <ColorBlock 
@@ -137,21 +137,12 @@ const IndexPage = () => {
         </ColorBlock>
         
         {/* 右側：4割の領域 */}
-        <div style={{ backgroundColor: 'rgba(255,255,255,0.9)', padding: '30px', borderRadius: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <h3>右側エリア（4fr）</h3>
-          <p>全体の4割を占める領域</p>
-          <div style={{ marginTop: '20px', width: '100%' }}>
-            <div style={{ backgroundColor: '#ddd', padding: '15px', marginBottom: '15px', borderRadius: '5px' }}>
-              <h5>サイドコンテンツ1</h5>
-            </div>
-            <div style={{ backgroundColor: '#ddd', padding: '15px', marginBottom: '15px', borderRadius: '5px' }}>
-              <h5>サイドコンテンツ2</h5>
-            </div>
-            <div style={{ backgroundColor: '#ddd', padding: '15px', borderRadius: '5px' }}>
-              <h5>サイドコンテンツ3</h5>
-            </div>
-          </div>
-        </div>
+        <ColorBlock
+          backgroundImage="/static/images/mountain.jpg"
+          height="100%"
+        >
+          
+        </ColorBlock>
       </ColorBlock>
       
     </Layout>
